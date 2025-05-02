@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн Страховка</title>
+    <link rel="stylesheet" href="../scss/form.css">
+</head>
+<body>
+    
+    <header>
+        <a href="hello.html">
+            <h1>
+                <svg width="200" height="50" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
+                    <polyline points="10,20 30,40 80,5" stroke="white" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    <line x1="103" y1 ="6" x2="120" y2="25" stroke="white" stroke-width="4" transform="rotate(-35, 90, 40)" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <text x="46" y="18" font-family="Arial" font-size="12" fill="white" transform="rotate(-35, 90, 40)">
+                        EverSafee
+                    </text>
+                    <line x1="45" y1="25" x2="120" y2="25" stroke="white" stroke-width="4" transform="rotate(-35, 90, 40)" stroke-linecap="round" stroke-linejoin="round"> </line>
+                </svg>
+            </h1>
+        </a>
+        <nav class="nav-menu">
+            <a href="../html/info.html">Главная страница</a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="../html/info.html">Онлайн страховка</a>
+    </div>
+    </header>
+<section class="text">
+    <h2>Онлайн заявка</h2>
+    <div class="container">
+        <form class="insurance-form">
+          <h2>Оформление страховки</h2>
+          <label>ФИО:</label>
+          <input type="text" placeholder="Введите ваше ФИО" required >
+          <label>Введите email:</label>
+          <input type="email" placeholder="Введите email" required >
+          <label for="insuranceKind">Тип страхования:</label>
+<select id="insuranceKind">
+  <option value="">Выберите тип</option>
+  <option value="Транспорт">Транспорт</option>
+  <option value="Имущество">Имущество</option>
+  <option value="Медицинская">Медицинская</option>
+  <option value="От несчастных случаев">От несчастных случаев</option>
+</select>
+<label for="clientType">Кто оформляет:</label>
+<select id="clientType">
+  <option value="">Выберите</option>
+  <option value="first">Первая страховка</option>
+  <option value="repeat">Повторная</option>
+  <option value="company">Юр. лицо</option>
+</select>
+<button id="submitBtn">Оформить</button>
+        </form>
+    
+        <div class="insurance-info">
+          <h2>Примерная стоимость<br>страхования</h2>
+          <p id="result"> —</p>
+        </div>
+      </div>
+      </section>
+    
+      <div id="footer">
+        <footer>
+            <div class="footer-content">
+                <p class="slogan">Ваша уверенность — наша забота.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <img src="../photo/icon/location.svg" alt="Адрес">
+                        <p>г. Минск, ул. Свердлова, д. 13А</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="../photo/icon/number.svg" alt="Телефон">
+                        <p>375 (29) 990-73-23</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+<script src="../js/first.js"></script>
+<script src="../js/four.js"></script>
+</body>
+</html>
